@@ -1,5 +1,5 @@
 {
-  "name": "@paralo-official/typeorm-seeding",
+  "name": "@ellie-jo/typeorm-seeding",
   "version": "1.1.0",
   "description": "A simple but powerful database seeder for TypeORM ^0.3.0",
   "license": "MIT",
@@ -26,6 +26,7 @@
     "lint:fix": "pnpm lint --fix",
     "lint:ci": "pnpm lint",
     "prebuild": "rimraf dist",
+    "prepare": "npm run build",
     "schema:drop": "ts-node ./node_modules/typeorm/cli.js schema:drop",
     "schema:log": "ts-node ./node_modules/typeorm/cli.js schema:log",
     "schema:sync": "ts-node ./node_modules/typeorm/cli.js schema:sync",
